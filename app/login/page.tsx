@@ -1,14 +1,13 @@
-import type { Metadata } from "next";
+import type { Metadata } from 'next';
+import { LoginForm } from './_components/login-form';
 
 export const metadata: Metadata = {
-  title: "Club Login | rungolf.club",
-  alternates: { canonical: "/login" },
+  title: 'Club Login | rungolf.club',
+  description: 'Log in to your golf club dashboard or member app. Magic link — no password required.',
+  alternates: { canonical: '/login' },
+  robots: { index: false },
 };
 
-export default function Page() {
-  return (
-    <main className="min-h-screen flex items-center justify-center">
-      <h1 className="font-display text-3xl" style={{ color: '#1B3A2B' }}>Login — coming soon</h1>
-    </main>
-  );
+export default function LoginPage() {
+  return <LoginForm />;
 }
