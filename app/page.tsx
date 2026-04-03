@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { HeroVisual } from "@/components/sections/hero-visual";
+import { FeaturesGrid } from "@/components/sections/features-grid";
 
 export const metadata: Metadata = {
   title: "Golf Club Management Software Ireland & UK | rungolf.club",
@@ -157,6 +158,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ── Features grid ── */}
+      <FeaturesGrid />
 
       {/* ── Bottom CTA ── */}
       <section
