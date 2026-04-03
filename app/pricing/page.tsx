@@ -1,14 +1,13 @@
-import type { Metadata } from "next";
+import type { Metadata } from 'next';
+import { PricingClient } from './_components/pricing-client';
 
 export const metadata: Metadata = {
-  title: "Golf Club Software Pricing Ireland & UK",
-  alternates: { canonical: "/pricing" },
+  title: 'Golf Club Software Pricing Ireland & UK',
+  description:
+    'Simple, transparent pricing for Irish and UK golf clubs. From €79/month. No per-member fees, no booking commissions, no hidden costs. Free 3-month pilot.',
+  alternates: { canonical: '/pricing' },
 };
 
-export default function Page() {
-  return (
-    <main className="min-h-screen flex items-center justify-center">
-      <h1 className="font-display text-3xl" style={{ color: '#1B3A2B' }}>Pricing — coming soon</h1>
-    </main>
-  );
+export default function PricingPage() {
+  return <PricingClient />;
 }
