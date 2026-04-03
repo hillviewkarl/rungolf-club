@@ -26,6 +26,7 @@ const COLUMNS = [
     links: [
       { label: 'Blog', href: '/blog' },
       { label: 'Support & Onboarding', href: '/support' },
+      { label: 'Email Support', href: 'mailto:hello@rungolf.club' },
     ],
   },
   {
