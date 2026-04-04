@@ -317,7 +317,7 @@ export function SignupForm({ initialPlan, initialInterval }: Props) {
               </div>
 
               <div className="rounded-xl p-4 border text-sm text-center" style={{ borderColor: '#86efac', backgroundColor: '#f0fdf4', color: '#166534' }}>
-                🏌️ Your first 3 months are <strong>free</strong>. Payment only starts after your pilot.
+                🏌️ Your first 3 months are <strong>free</strong>. Payment only starts after your pilot. Cancel anytime.
               </div>
 
               {error && (
