@@ -4,9 +4,9 @@ import { HeroVisual } from "@/components/sections/hero-visual";
 import { FeaturesGrid } from "@/components/sections/features-grid";
 
 export const metadata: Metadata = {
-  title: "Golf Club Management Software Ireland & UK | rungolf.club",
+  title: "rungolf.club — Modern Golf Club Management Software",
   description:
-    "Modern golf club management software for Irish and UK clubs. Tee sheet, competition management, member booking and cashless payments — at 50-70% less than BRS Golf.",
+    "Tee sheets, competitions, and winter handicap management for independent member clubs. Flat transparent pricing. No tee time extraction deals.",
   alternates: { canonical: "/" },
 };
 
@@ -57,45 +57,35 @@ export default function HomePage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 grid lg:grid-cols-2 gap-16 items-center">
           {/* Left: copy */}
           <div>
-            <p
-              className="font-display text-xs uppercase tracking-widest mb-5 font-semibold"
-              style={{ color: "#C9963B" }}
-            >
-              Golf Club Management Software Ireland & UK
-            </p>
             <h1
               className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight text-balance"
             >
-              Golf club software that works for you.{" "}
-              <span style={{ color: "#C9963B" }}>Not GolfNow.</span>
+              Run your club,{" "}
+              <span style={{ color: "#C9963B" }}>not your spreadsheets.</span>
             </h1>
             <p className="text-white/70 text-lg md:text-xl mb-8 max-w-lg text-balance leading-relaxed">
-              Modern tee sheet, competition management and member booking —
-              at 50–70% less than what Irish and UK clubs pay today.
-            </p>
-
-            {/* Social proof */}
-            <p className="text-white/40 text-sm mb-8">
-              Trusted by clubs across Ireland and the UK
+              rungolf.club is modern golf club management software — tee sheets,
+              competitions, handicaps and payments, all in one place. Built for member
+              clubs that deserve better than 20-year-old software and backdoor tee time deals.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3">
               <Link
-                href="/pricing"
+                href="/signup"
                 className="inline-flex items-center justify-center px-6 py-3.5 rounded-lg font-semibold text-white transition-opacity hover:opacity-90 text-base"
                 style={{ backgroundColor: "#C9963B" }}
               >
-                See Pricing
+                Book a demo
               </Link>
               <Link
-                href="/signup"
+                href="#features"
                 className="inline-flex items-center justify-center px-6 py-3.5 rounded-lg font-semibold border transition-colors text-base"
                 style={{
                   borderColor: "rgba(255,255,255,0.3)",
                   color: "white",
                 }}
               >
-                Book a Demo
+                See the features
               </Link>
             </div>
           </div>
@@ -119,6 +109,35 @@ export default function HomePage() {
                 <span className="text-white/80 text-sm">{s.label}</span>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Problem section ── */}
+      <section className="py-24 px-4 bg-white">
+        <div className="max-w-3xl mx-auto">
+          <h2
+            className="font-display text-3xl sm:text-4xl font-bold mb-6 text-balance"
+            style={{ color: "#1B3A2B" }}
+          >
+            Your members deserve better. So does your committee.
+          </h2>
+          <div className="text-gray-600 text-lg leading-relaxed space-y-4">
+            <p>
+              Most golf club software was built in the early 2000s and hasn&apos;t changed much since.
+              It&apos;s clunky, expensive, and owned by private equity firms or media companies with their
+              own agenda.
+            </p>
+            <p>
+              BRS Golf hands one free tee time per day to GolfNow — costing busy clubs thousands in
+              lost green fee revenue every year. ClubV1 and Intelligent Golf are both owned by the same
+              PE house. HandicapMaster is still desktop software.
+            </p>
+            <p>
+              Meanwhile, your secretary is managing winter handicaps on a spreadsheet and chasing
+              members for competition fees by email.
+            </p>
+            <p className="font-semibold" style={{ color: "#1B3A2B" }}>There&apos;s a better way.</p>
           </div>
         </div>
       </section>
@@ -160,7 +179,9 @@ export default function HomePage() {
       </section>
 
       {/* ── Features grid ── */}
-      <FeaturesGrid />
+      <div id="features">
+        <FeaturesGrid />
+      </div>
 
       {/* ── Bottom CTA ── */}
       <section

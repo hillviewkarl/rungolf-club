@@ -73,6 +73,7 @@ const FEATURES = [
       'Automatic WHS snapshot, frozen winter index, manual adjustments with audit trail — no spreadsheets, no errors.',
     href: '/features/handicaps',
     keyword: 'golf winter handicap management',
+    badge: 'Key differentiator',
   },
 ];
 
@@ -104,8 +105,16 @@ export function FeaturesGrid() {
             <Link
               key={f.href}
               href={f.href}
-              className="group block bg-white border border-gray-100 rounded-2xl p-7 hover:border-green/30 hover:shadow-md transition-all"
+              className="group block bg-white border border-gray-100 rounded-2xl p-7 hover:border-green/30 hover:shadow-md transition-all relative overflow-hidden"
             >
+              {'badge' in f && f.badge && (
+                <span
+                  className="absolute top-4 right-4 text-xs font-bold px-2.5 py-1 rounded-full"
+                  style={{ backgroundColor: '#C9963B', color: '#fff' }}
+                >
+                  {f.badge}
+                </span>
+              )}
               <div
                 className="w-12 h-12 rounded-xl flex items-center justify-center mb-5"
                 style={{ backgroundColor: '#F5F0E8' }}

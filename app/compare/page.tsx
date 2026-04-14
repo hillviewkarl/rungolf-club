@@ -33,6 +33,14 @@ const COMPARISONS = [
     badge: null,
     badgeColor: null,
   },
+  {
+    href: '/compare/golfmanager',
+    competitor: 'GolfManager',
+    headline: 'rungolf.club vs GolfManager',
+    summary: 'GolfManager is a well-reviewed global platform built for resorts and hotels. rungolf.club is purpose-built for independent member clubs — at half the price.',
+    badge: null,
+    badgeColor: null,
+  },
 ];
 
 const SWITCHING_REASONS = [
